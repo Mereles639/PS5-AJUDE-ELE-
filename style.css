@@ -1,0 +1,153 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #4a148c, #ff1744); /* Vibrant gradient */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px; /* Limit content width */
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+header h1 {
+    color: #00b0ff; /* Bright blue */
+    margin-bottom: 20px;
+    font-size: 1.8em; /* Adjusted for mobile */
+}
+
+.ps5-image {
+    max-width: 80%; /* Responsive image size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.donation-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1em; /* Adjusted for mobile */
+}
+
+.donation-info strong {
+    color: #ffea00; /* Yellow */
+}
+
+.pix-area {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Lighter semi-transparent background */
+    border-radius: 10px;
+}
+
+.pix-area h3 {
+    color: #a7ffeb; /* Light cyan */
+    margin-top: 0;
+}
+
+.pix-key-container {
+    background-color: #fff; /* White background for the key */
+    color: #000; /* Black text */
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Stack on mobile */
+    align-items: center;
+    gap: 10px; /* Space between key and button */
+    word-break: break-all; /* Break long words */
+}
+
+#pix-key {
+    font-weight: bold;
+    font-size: 1.1em; /* Adjusted for mobile */
+}
+
+#copy-pix {
+    background-color: #00b0ff; /* Bright blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Adjusted for mobile */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button on mobile */
+    box-sizing: border-box;
+}
+
+#copy-pix:hover {
+    background-color: #0091ea; /* Darker blue on hover */
+}
+
+.feedback-message {
+    color: #ffea00; /* Yellow */
+    margin-top: 10px;
+    font-size: 0.9em;
+    min-height: 1em; /* Reserve space */
+}
+
+.tiktok-area {
+     margin-top: 30px;
+     padding: 20px;
+     background-color: rgba(255, 255, 255, 0.1);
+     border-radius: 10px;
+}
+
+.tiktok-area h3 {
+    color: #a7ffeb;
+    margin-top: 0;
+}
+
+.tiktok-link {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #25f4ee; /* TikTok-like cyan */
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px; /* Pill shape */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em; /* Adjusted for mobile */
+    transition: background-color 0.3s ease;
+}
+
+.tiktok-link:hover {
+    background-color: #1eeadf; /* Darker cyan on hover */
+}
+
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (min-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .donation-info p, #pix-key, #copy-pix, .tiktok-link {
+        font-size: 1em;
+    }
+     .pix-key-container {
+        flex-direction: row; /* Row layout on larger screens */
+        gap: 20px;
+     }
+     #copy-pix {
+        width: auto; /* Auto width button on larger screens */
+     }
+}
+
+
